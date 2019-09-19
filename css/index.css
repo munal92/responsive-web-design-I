@@ -1,3 +1,353 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+a {
+  text-decoration: none;
+}
+
+
+body {
+  max-width: 880px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+
+body nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  margin: 30px 0;
+}
+body nav a {
+  color: grey;
+  width: 14%;
+  text-align: center;
+}
+
+
+header {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+
+header section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+header section h1 {
+  font-size: 48px;
+}
+
+
+header section button {
+  background: white;
+  width: 50%;
+  height: 32px;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+
+header img {
+  width: 50%;
+}
+
+
+hr {
+  border: 1px solid black;
+  width: 100%;
+}
+
+
+.content-sections {
+  display: flex;
+}
+
+.sub-section {
+  margin: 20px 1%;
+}
+
+address {
+  margin: 20px 0;
+}
+
+address p {
+  padding: 5px 0;
+}
+
+
+footer {
+  text-align: center;
+}
+
+
+@media (max-width: 800px) {
+
+    header section button {
+        background: red;
+        width: 27%;
+        height: 30px;
+        font-size: 15px;
+        border: 1px solid black;
+
+      }
+
+      header img {
+        visibility: hidden;
+        width: 0%;
+      }
+
+      header section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+        text-align: center;
+      }
+
+      body nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80px;
+        margin: 70px 0;
+        flex-direction: row;
+      }
+
+      body nav a {
+        color: grey;
+        width: 14%;
+        text-align: center;
+      }
+
+      .logo{
+        position:absolute;
+        
+        top:0;
+      }
+
+}
+
+@media (max-width: 500px) {
+
+    header section button {
+        background: purple;
+        width: 30%;
+        height: 32px;
+        font-size: 18px;
+        border: 1px solid black;
+
+      }
+
+      header img {
+        visibility: hidden;
+        width: 0%;
+      }
+
+      header section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        
+        text-align: center;
+      }
+      
+header section h1 {
+  font-size: 48px;
+}
+
+      body nav {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80px;
+        margin: 70px 0;
+        flex-direction: column;
+      }
+
+      body nav a {
+        color: grey;
+        width: 14%;
+        text-align: center;
+      }
+
+      .logo{
+        position:absolute;
+        
+        top:0;
+      }
+
+      .content-sections {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .sub-section {
+        margin: 20px 1%;
+      }
+      
+
+}
