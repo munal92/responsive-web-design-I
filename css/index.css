@@ -245,7 +245,7 @@ footer {
 @media (max-width: 800px) {
 
     header section button {
-        background: red;
+        
         width: 27%;
         height: 30px;
         font-size: 15px;
@@ -293,7 +293,7 @@ footer {
 @media (max-width: 500px) {
 
     header section button {
-        background: purple;
+       
         width: 30%;
         height: 32px;
         font-size: 18px;
